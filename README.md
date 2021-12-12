@@ -18,9 +18,7 @@ Cambiamos la versión de Firebase en package.json:
   
     apiKey: "XXXXXXXXXXXXXXXXXXXX",
     authDomain: "xxxxxxxxxxxxx.firebaseapp.com",
-    databaseURL: "xxxxxxxxxxxxxxxxxxx.firebasedatabase.app",
     projectId: "xxxxxxxxxxxxxxxxx",
-    storageBucket: "xxxxxxxxxxxxxxx.appspot.com",
     messagingSenderId: "xxxxxxxxxx",
     appId: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
     measurementId: "xxxxxxxxxxxxxxxx"
