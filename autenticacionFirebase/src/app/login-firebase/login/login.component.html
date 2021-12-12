@@ -1,0 +1,70 @@
+
+<div>
+    <p *ngIf="emailLoggeado" style="color: white; display: inline-flex;">Usuario: {{emailLoggeado}}</p>
+    <button *ngIf="!emailLoggeado" type="button" class="btn btn-primary m-2" data-bs-toggle="modal" data-bs-target="#signinModal">
+        Sign in
+    </button>
+    <button *ngIf="!emailLoggeado" type="button" class="btn btn-success m-2" data-bs-toggle="modal" data-bs-target="#loginModal">
+        Login
+    </button>
+    <button *ngIf="emailLoggeado" type="button" class="btn btn-danger m-2" data-bs-toggle="modal" (click)="exitLogin()">
+        Salir login
+    </button>
+</div>
+
+
+<!-- Modal Login-->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div style="display: block;">
+                        <label for="">Email</label>
+                        <input type="text" class="m-3" [(ngModel)]="email" name="email">  
+                    </div>
+                    <div style="display: block;">
+                        <label for="">Contraseña</label>
+                        <input type="password" class="m-3" [(ngModel)]="password" name="password">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary" (click)="login()">Aceptar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Sign in-->
+<div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="signinModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="signinModalLabel">Registrar nuevo usuario</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div style="display: block;">
+                        <label for="">Email</label>
+                        <input type="text" class="m-3" [(ngModel)]="email" name="email">
+                    </div>
+                    <div style="display: block;">
+                        <label for="">Contraseña</label>
+                        <input type="password" class="m-3" [(ngModel)]="password" name="password">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary" (click)="signin()">Aceptar</button>
+            </div>
+        </div>
+    </div>
