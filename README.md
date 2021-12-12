@@ -5,6 +5,7 @@
 `npm install firebase --save`
 
 Cambiamos la versión de Firebase en package.json: 
+
 `"dependencies": {
    
     "firebase": "^8.10.0",
