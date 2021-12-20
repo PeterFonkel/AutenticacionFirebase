@@ -28,6 +28,10 @@ Cambiamos la versión de Firebase en package.json:
   }
   ```
   
+  Reinstalamos las dependencias:
+  
+  `npm install`
+  
   En la carpeta enviroments creamos el archivo firebase.ts con la configuración de nuestro proyecto Firebase. Esta información se encuentra en el icono ⚙️ al lado de "Descripción general del proyecto" > "configuración del proyecto".
   
   
