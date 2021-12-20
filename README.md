@@ -6,15 +6,18 @@
 
 Cambiamos la versión de Firebase en package.json: 
 
-`"dependencies": {`
+```
+"dependencies": {
    
-    `"firebase": "^8.10.0",`
+    "firebase": "^8.10.0"
     
-  `},`
+  }
+  ```
   
   En la carpeta enviroments creamos el archivo firebase.ts con la configuración de nuestro proyecto Firebase. Esta información se encuentra en el icono ⚙️ al lado de "Descripción general del proyecto" > "configuración del proyecto".
   
-  `export const firebaseConfig = {`
+  ```
+  export const firebaseConfig = {
   
     apiKey: "XXXXXXXXXXXXXXXXXXXX",
     authDomain: "xxxxxxxxxxxxx.firebaseapp.com",
@@ -23,7 +26,8 @@ Cambiamos la versión de Firebase en package.json:
     appId: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
     measurementId: "xxxxxxxxxxxxxxxx"
     
-  `};`
+ };
+ ```
 
 Estas claves son privadas. Añadir a gitignore antes de subir a github.
 
